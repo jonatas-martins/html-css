@@ -1,3 +1,111 @@
 @charset "UTF-8";
 
 /* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+Pequenas telas: até 600px
+Cellular: de 600px a 768px
+tablet:768px até 992px
+Desktop: 992px ate 1200px
+Grandes Telas: acima de 1200px */
+
+/*Impressora*/
+@media print {
+  * {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  main {
+    width: 90vw;
+  }
+
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+
+  main::after {
+    content: 'Essa impressão foi feita através do site https://github.com/jonatas-martins';
+  }
+
+  #print {
+    display: block;
+    margin: auto;
+  }
+
+  #tablet,
+  #desktop,
+  #tv,
+  #phone {
+    display: none;
+  }
+}
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background: black url(../imagens/back-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  main {
+    width: 600px;
+  }
+
+  #tablet {
+    display: block;
+    margin: auto;
+  }
+
+  #print,
+  #desktop,
+  #tv,
+  #phone {
+    display: none;
+  }
+}
+/*Desktop*/
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  body {
+    background: black url(../imagens/back-pc.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  main {
+    width: 700px;
+  }
+
+  #desktop {
+    display: block;
+    margin: auto;
+  }
+
+  #print,
+  #tablet,
+  #tv,
+  #phone {
+    display: none;
+  }
+}
+/*Grandes Telas*/
+@media screen and (min-width: 1201px) {
+  body {
+    background: black url(../imagens/back-tv.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  main {
+    width: 800px;
+  }
+
+  #tv {
+    display: block;
+    margin: auto;
+  }
+
+  #print,
+  #tablet,
+  #desktop,
+  #phone {
+    display: none;
+  }
+}
