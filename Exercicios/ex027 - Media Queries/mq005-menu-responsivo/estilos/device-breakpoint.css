@@ -18,6 +18,10 @@
     border-top: 2px solid rgb(0, 87, 0);
   }
 
+  main {
+    width: 768px;
+  }
+
   #menu-b {
     display: none;
   }
