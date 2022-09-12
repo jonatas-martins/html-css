@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  nav {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 87, 0);
+  }
+
+  nav > a {
+    border-top: 2px solid rgb(0, 87, 0);
+  }
+
+  #menu-b {
+    display: none;
+  }
+
+  #rony {
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+  }
+
+  #rogerio {
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+  }
+}
